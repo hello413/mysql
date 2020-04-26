@@ -42,7 +42,14 @@ create database news;
 ```
 
 ### 5. 显示数据库： `show databases`
-
+```
+5.1、查询当前使用的数据库:  select  database();
+	 查询数据库版本也可以使用:  select  version();
+5.2、终止一条语句
+	如果想要终止一条正在编写的语句，可键入\c。
+5.3、退出mysql: \q(ctrl+c)
+	可使用\q、QUIT或EXIT：
+```
 ### 6. 删除数据库： `drop database db_name`
 
 ```mysql
@@ -311,3 +318,4 @@ insert into teacher values(”,’jack’,'大连二中’,'1975-12-23′);
 如果成功，空出一行无任何显示；如有错误，会有提示。（以上命令已经调试，你只要将//的注释去掉即可使用）。
 
 ② 或者进入命令行后使用 `mysql> source c:\school.sql; ` 也可以将 `school.sql` 文件导入数据库中。
+
